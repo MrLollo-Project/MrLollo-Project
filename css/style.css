@@ -1,0 +1,330 @@
+                                /*Generali*/
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: #000;
+    background: url(/images/sfondo2.png) repeat fixed 50%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+        /* Scrollbar */
+
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+
+                        /*NAVBAR*/
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 10%;
+        background-color: #273746;
+        justify-content: space-between;
+    }
+
+
+    
+
+
+    /*Social Links class it's blank*/
+    @media (min-width: 1025px) { /*Desktop*/
+        .social-links img{
+            height: 2em;
+            width: 2em;
+            margin-right: 2ch;
+            margin-left: -3ch;
+        }
+
+        .social-links img:hover{
+            height: 3em;
+            width: 3em;
+        }
+    }
+
+    @media (max-width: 1024px) { /*Mobile*/
+        .social-links img{
+            height: 50px;
+            width: 50px;
+        }
+        .social-links img:hover{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+
+    /*background-animation*/
+    @media (max-width: 1024px) { /*Mobile*/
+        .headerbg{
+            background: url(/images/sfondo1-mobile.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .headerbg h1{
+            color: #cca3a4;
+            font-size: 300%;
+            text-shadow: 2px 2px 8px #000;
+        }
+    }
+    @media (min-width: 1025px) { /*Desktop*/
+        .headerbg{
+            background: url(/images/sfondo1-desktop.png) repeat fixed 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .headerbg h1{
+            color: #000;
+            font-size: 575%;
+            text-shadow: 2px 2px 8px #857c7c;
+        }
+    }
+
+    .headerbg-inner{
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+
+    .headerbg h1{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1%;
+        /*color different if mobile or desktop*/
+    }
+
+
+    /*---------------------*/
+                                        /*Home Page*/
+
+.titolo{
+    color: #FFF;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) { /*Mobile*/
+    .titolo{
+        font-size: 350%;
+    }
+}
+
+                                /*Articoli*/
+.testo_articoli{
+    color: #FFF;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 40px 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1024px) { /*Mobile*/
+    .testo_articoli{
+        font-size: 325%;
+    }
+}
+
+
+.titolo_post{
+    color: #000;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) { /*Mobile*/
+    .titolo_post{
+        font-size: 450%;
+    }
+}
+
+.testo_post{
+    color: #000;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px 20px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) { /*Mobile*/
+    .testo_post{
+        font-size: 325%;
+    }
+}
+
+.images_home{
+    margin-top: 15%;
+    margin-right:auto;
+    margin-left:auto;
+    max-height: 200px;
+    max-width: 250px;
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    padding: 0px 30px;
+}
+
+.images_gallery{
+    margin-top: 20%;
+    margin-right:auto;
+    margin-left:auto;
+    max-height: 300px;
+    max-width: 400px;
+    height: auto;
+    width: auto;
+    border-radius: 15%;
+    padding: 0px 30px;
+}
+
+
+.images_articoli{
+    margin-right:auto;
+    margin-left:auto;
+    max-height: 300px;
+    max-width: 450px;
+    height: auto;
+    width: auto;
+    border-radius: 10%;
+    padding: 0px 20px;
+}
+
+.video{
+    margin-right:auto;
+    margin-left:auto;
+    width: 350px;
+    height: 250px;
+    padding: 0px 30px;
+}
+
+                                        /*Post*/
+.post{
+    margin: 15px;
+}
+
+
+p{
+    text-align: left;
+    opacity: 0.7;
+    line-height: 1.6;
+    color: #212529;
+}
+@media (max-width: 1024px) { /*Mobile*/
+    .p{
+        font-size: 325%;
+    }
+}
+
+.heading{
+    padding: 20px 0;
+}
+
+.heading h2{
+    font-size: 2rem;
+}
+
+.post img{
+    width: 100%;
+    height: auto;
+}
+
+.post-inf{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.post-inf h3{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.post-inf span{
+    display: block;
+    margin: 20px 0;
+    color: #343a40;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+                /*mailer*/
+.mailer{
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mailer textarea{
+    border: 1px solid #323232; /* Bordo */
+    color: #000;
+    height: 20em;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+@media (max-width: 1024px) { /*Mobile*/
+    .mailer input{
+        margin-top: 5%;
+        font-size: 250%;
+    }
+
+    .mailer textarea{
+        margin-top: 5%;
+        font-size: 250%;
+    }
+
+    .mailer button{
+        margin-top: 5%;
+        font-size: 300%;
+    }
+}
+
+
+                                    /*footer*/
+.footer{
+    margin-top: 15%;
+}
+
+.footer li{
+    margin-right: auto;
+    margin-left: auto;
+    font-family: uppercase;
+    font-weight: bold;
+    font-size: large;
+    color: #007bff;
+}
